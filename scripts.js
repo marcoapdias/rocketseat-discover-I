@@ -26,29 +26,6 @@ const Storage = {
     }
 }
 
-const transactions = [
-    {
-        description: 'Luz',
-        amount: -50000,
-        date: '23-01-2021'
-    },
-    {
-        description: 'Website',
-        amount: 500000,
-        date: '23-01-2021'
-    },
-    {
-        description: 'Internet',
-        amount: -20000,
-        date: '23-01-2021'
-    },
-    {
-        description: 'App',
-        amount: 200000,
-        date: '23-01-2021'
-    },
-]
-
 const Transaction = {
     all: Storage.get(),
 
@@ -140,8 +117,6 @@ const DOM = {
     clearTransactions() {
         DOM.transactionsContainer.innerHTML = "";
     }
-
-
 }
 
 const Utils = {
@@ -178,8 +153,6 @@ const Utils = {
     }
 
 }
-
-
 
 const Form = {
     description: document.querySelector('input#description'),
